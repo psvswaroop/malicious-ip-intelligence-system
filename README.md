@@ -60,27 +60,39 @@ pip install requests
 
 For Kali Linux:
 
+```bash
 export VT_API_KEY="YOUR_VIRUSTOTAL_API_KEY"
-3. Run the script
+```
+
+### 3. Run the Script
 
 From the repository root:
 
+```bash
 python3 code/ip_intelligence.py
+```
 
 The script reads IP addresses from:
 
+```text
 data/ip_list.txt
+```
 
 and generates:
 
+```text
 results/ip_reputation.csv
-📊 Sample Results
-IP	Reputation	Malicious	Suspicious	Classification
-8.8.8.8	560	0	0	Safe
-1.1.1.1	114	0	0	Safe
-8.8.4.4	180	2	0	Suspicious
-208.67.222.222	55	1	0	Suspicious
-9.9.9.9	10	0	1	Suspicious
+```
+
+## 📊 Sample Results
+
+| IP | Reputation | Malicious | Suspicious | Classification |
+|---|---:|---:|---:|---|
+| 8.8.8.8 | 560 | 0 | 0 | Safe |
+| 1.1.1.1 | 114 | 0 | 0 | Safe |
+| 8.8.4.4 | 180 | 2 | 0 | Suspicious |
+| 208.67.222.222 | 55 | 1 | 0 | Suspicious |
+| 9.9.9.9 | 10 | 0 | 1 | Suspicious |
 
 The analysis resulted in 2 Safe and 3 Suspicious classifications using the project-defined rule. No IP reached the project's Malicious threshold.
 
@@ -96,26 +108,28 @@ A single detection should not automatically be treated as proof that an IP is ma
 
 ![IP Reputation Results](screenshots/results.png)
 
-🔐 Security Note
+## 🔐 Security Note
 
 Never commit your VirusTotal API key to GitHub.
 
-The script expects the API key through the VT_API_KEY environment variable.
+The script expects the API key through the `VT_API_KEY` environment variable.
 
-🚀 Future Scope
-Integrate additional threat intelligence sources such as AbuseIPDB
-Analyze IP addresses directly from network logs
-Add automated security alerts
-Develop a web-based dashboard
-Maintain historical IP reputation data
-📚 Learning Outcomes
+## 🚀 Future Scope
+
+- Integrate additional threat intelligence sources such as AbuseIPDB
+- Analyze IP addresses directly from network logs
+- Add automated security alerts
+- Develop a web-based dashboard
+- Maintain historical IP reputation data
+
+## 📚 Learning Outcomes
 
 This project provided hands-on experience with:
 
-Python scripting
-REST API integration
-Threat intelligence
-IP reputation analysis
-CSV data processing
-Basic cybersecurity investigation
-Secure handling of API credentials
+- Python scripting
+- REST API integration
+- Threat intelligence
+- IP reputation analysis
+- CSV data processing
+- Basic cybersecurity investigation
+- Secure handling of API credentials
