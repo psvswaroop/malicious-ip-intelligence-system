@@ -86,10 +86,15 @@ The analysis resulted in 2 Safe and 3 Suspicious classifications using the proje
 
 A single detection should not automatically be treated as proof that an IP is malicious.
 
-📸 Screenshots
-Script Execution
+## 📸 Screenshots
 
-Generated Results
+### Script Execution
+
+![Script Execution](screenshots/execution.png)
+
+### Generated Results
+
+![IP Reputation Results](screenshots/results.png)
 
 🔐 Security Note
 
