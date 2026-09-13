@@ -1,0 +1,6 @@
+IP,Reputation,Malicious,Suspicious,Harmless,Undetected,Classification
+8.8.8.8,560,0,0,52,37,Safe
+1.1.1.1,114,0,0,55,34,Safe
+8.8.4.4,180,2,0,54,33,Suspicious
+208.67.222.222,55,1,0,53,35,Suspicious
+9.9.9.9,10,0,1,54,34,Suspicious
